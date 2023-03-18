@@ -1,0 +1,21 @@
+{
+    "name": "mitulmlakhani/fit-app-data",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mitulmlakhani\\FitAppData\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mitul Lakhani",
+            "email": "mitulmlakhani99@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT"
+}
