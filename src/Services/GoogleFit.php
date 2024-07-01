@@ -79,17 +79,17 @@ class GoogleFit extends BaseService implements ReadStepDataContract
                             }, $row['value']));
                         }
                     }
-
-                    $steps['rows'][] = [
-                        'from' => $bucket['startTimeMillis'],
-                        'to' => $bucket['endTimeMillis'],
-                        'steps' => $totalSteps,
-                        'calories' => $totalCalories
-                    ];
-
-                    $steps['total'] += $totalSteps;
-                    $steps['total_calories'] += $totalCalories;
                 }
+
+                $steps['rows'][] = [
+                    'from' => $bucket['startTimeMillis'],
+                    'to' => $bucket['endTimeMillis'],
+                    'steps' => $totalSteps,
+                    'calories' => $totalCalories
+                ];
+
+                $steps['total'] += $totalSteps;
+                $steps['total_calories'] += $totalCalories;
             }
         }
 
